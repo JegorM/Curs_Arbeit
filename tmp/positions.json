@@ -1,0 +1,1139 @@
+{
+  "data": {
+    "1": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0.629 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "2": {
+      "TOP": { "playRate": 1.128 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "3": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.159 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "4": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.139 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "5": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.139 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "6": {
+      "TOP": { "playRate": 1.181 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "7": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 2.183 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "8": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 2.1 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "9": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.071 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "10": {
+      "TOP": { "playRate": 1.256 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "11": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 3.42 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "12": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.536 }
+    },
+    "13": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.897 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "14": {
+      "TOP": { "playRate": 2.011 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "15": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 2.847 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "16": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 3.147 }
+    },
+    "17": {
+      "TOP": { "playRate": 1.666 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "18": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 3.935 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "19": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.558 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "20": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.297 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "21": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 6.319 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "22": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 4.025 },
+      "UTILITY": { "playRate": 2.56 }
+    },
+    "23": {
+      "TOP": { "playRate": 1.109 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "24": {
+      "TOP": { "playRate": 3.173 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "25": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 3.537 }
+    },
+    "26": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.474 }
+    },
+    "27": {
+      "TOP": { "playRate": 0.863 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "28": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.047 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "29": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 2.867 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "30": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.026 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "31": {
+      "TOP": { "playRate": 0.784 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "32": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.376 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 2.249 }
+    },
+    "33": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.014 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "34": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.206 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "35": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.721 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "36": {
+      "TOP": { "playRate": 0.959 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "37": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.357 }
+    },
+    "38": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.604 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "39": {
+      "TOP": { "playRate": 2.447 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 2.105 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "40": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 2.357 }
+    },
+    "41": {
+      "TOP": { "playRate": 2.95 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "42": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0.603 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "43": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 3.435 }
+    },
+    "44": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0.797 }
+    },
+    "45": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.726 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "48": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.17 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "50": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.126 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.842 }
+    },
+    "51": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 9.494 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "53": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 4.277 }
+    },
+    "54": {
+      "TOP": { "playRate": 1.35 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "55": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 3.834 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "56": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.016 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "57": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.442 }
+    },
+    "58": {
+      "TOP": { "playRate": 2.651 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "59": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.853 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "60": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.827 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "61": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.06 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "62": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0.826 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "63": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.88 }
+    },
+    "64": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 5.673 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "67": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 3.25 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "68": {
+      "TOP": { "playRate": 0.633 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "69": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0.935 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "72": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0.353 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "74": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.489 }
+    },
+    "75": {
+      "TOP": { "playRate": 2.97 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "76": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.861 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "77": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.8 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "78": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.052 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "79": {
+      "TOP": { "playRate": 1.244 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "80": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0.939 }
+    },
+    "81": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 8.728 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "82": {
+      "TOP": { "playRate": 3.269 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "83": {
+      "TOP": { "playRate": 1.335 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "84": {
+      "TOP": { "playRate": 1.506 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 5.015 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "85": {
+      "TOP": { "playRate": 0.693 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "86": {
+      "TOP": { "playRate": 2.805 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "89": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 2.806 }
+    },
+    "90": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 2.315 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "91": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0.914 },
+      "MIDDLE": { "playRate": 1.118 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "92": {
+      "TOP": { "playRate": 1.812 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "96": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0.879 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "98": {
+      "TOP": { "playRate": 2.262 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "99": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.917 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 4.842 }
+    },
+    "101": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.025 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 2.125 }
+    },
+    "102": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.11 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "103": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 3.015 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "104": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 6.909 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "105": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.761 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "106": {
+      "TOP": { "playRate": 1.039 },
+      "JUNGLE": { "playRate": 1.119 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "107": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.495 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "110": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.007 },
+      "BOTTOM": { "playRate": 4.727 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "111": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 3.66 }
+    },
+    "112": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 4.522 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "113": {
+      "TOP": { "playRate": 1.401 },
+      "JUNGLE": { "playRate": 2.841 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "114": {
+      "TOP": { "playRate": 3.96 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "115": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0.769 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "117": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 4.842 }
+    },
+    "119": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 3.103 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "120": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 4.131 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "121": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.726 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "122": {
+      "TOP": { "playRate": 5.076 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "126": {
+      "TOP": { "playRate": 1.456 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "127": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.232 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "131": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 3.075 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "133": {
+      "TOP": { "playRate": 0.611 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "134": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 5.314 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "136": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0.257 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "141": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 4.598 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "142": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.272 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "143": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 2.046 }
+    },
+    "145": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 11.984 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "147": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.846 }
+    },
+    "150": {
+      "TOP": { "playRate": 1.377 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "154": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.313 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "157": {
+      "TOP": { "playRate": 1.072 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 4.695 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "161": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.02 }
+    },
+    "163": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0.659 },
+      "MIDDLE": { "playRate": 0.631 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "164": {
+      "TOP": { "playRate": 3.095 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "166": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.143 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "200": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 3.31 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "201": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.102 }
+    },
+    "202": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 7.39 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "203": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.983 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "221": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0.587 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "222": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 4.139 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "223": {
+      "TOP": { "playRate": 0.667 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "234": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 5.889 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "235": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 3.158 }
+    },
+    "236": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 7.185 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "238": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.128 },
+      "MIDDLE": { "playRate": 4.384 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "240": {
+      "TOP": { "playRate": 0.82 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "245": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 3.594 },
+      "MIDDLE": { "playRate": 1.351 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "246": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 1.005 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "254": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 2.13 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "266": {
+      "TOP": { "playRate": 6.285 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "267": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 6.297 }
+    },
+    "268": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 2.545 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "350": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 4.773 }
+    },
+    "360": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 4.725 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "412": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 5.818 }
+    },
+    "420": {
+      "TOP": { "playRate": 1.535 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "421": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0.998 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "427": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0.352 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "429": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 1.611 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "432": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.469 }
+    },
+    "497": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 1.476 }
+    },
+    "498": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 2.054 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "516": {
+      "TOP": { "playRate": 2.747 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "517": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 7.632 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "518": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0.575 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "523": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 3.317 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "526": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0.866 }
+    },
+    "555": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 5.083 }
+    },
+    "711": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 3.156 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "777": {
+      "TOP": { "playRate": 2.842 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 4.319 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "875": {
+      "TOP": { "playRate": 4.185 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "876": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 1.644 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "887": {
+      "TOP": { "playRate": 1.257 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "888": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 3.167 }
+    },
+    "895": {
+      "TOP": { "playRate": 0 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 1.497 },
+      "UTILITY": { "playRate": 0 }
+    },
+    "897": {
+      "TOP": { "playRate": 4.951 },
+      "JUNGLE": { "playRate": 0 },
+      "MIDDLE": { "playRate": 0 },
+      "BOTTOM": { "playRate": 0 },
+      "UTILITY": { "playRate": 0 }
+    }
+  },
+  "patch": "12.22"
+}

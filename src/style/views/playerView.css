@@ -1,0 +1,152 @@
+.LvlIkonName {
+  padding: 0 20px;
+  display: flex;
+}
+
+.NameAndLvl {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 20px;
+  font-size: 30px;
+}
+
+.IconPlayer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.MatchsStats {
+  margin: 20px;
+  /* display: flex; */
+  border: 2px solid black;
+  border-radius: 2%;
+  background-color: rgb(182, 247, 248);
+}
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.namePlayers {
+  display: flex;
+  width: 300px;
+  font-size: 20px;
+}
+
+.champIkonGame {
+  width: 50px;
+  height: 50px;
+}
+
+.name {
+  padding-left: 10px;
+}
+
+.iconLongAndHeigth {
+  background-color: #f8f8e9;
+  width: 37px;
+  height: 38px;
+}
+
+.team {
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.winTeam {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+}
+
+.imgIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.containerItems {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.killSuportDie {
+  display: flex;
+  padding-left: 100px;
+  font-size: 20px;
+  width: 220px;
+}
+
+.minionsKill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+
+  /* margin-left: 50px; */
+}
+.minion {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+}
+
+.totalDamage {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 20px;
+  margin-left: 70px;
+  width: 50px;
+}
+
+.vision {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 20px;
+  margin-left: 60px;
+  width: 60px;
+}
+
+.gold {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 20px;
+  margin-left: 110px;
+  width: 30px;
+}
+
+.nameStats {
+  display: flex;
+  justify-content: space-around;
+}
+.stat {
+  font-size: 20px;
+}
+
+.items {
+  padding-left: 280px;
+}
+
+.kda {
+  padding-left: 170px;
+}
+
+.minions {
+  margin-left: 30px;
+}
+
+.totDamage {
+  margin-right: 20px;
+}
+
+.visions {
+  padding-right: 40px;
+}
