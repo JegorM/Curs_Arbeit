@@ -17,7 +17,7 @@
                         :src="`http://ddragon.leagueoflegends.com/cdn/12.22.1/img/passive/${arts.passive.image.full}`" />
 
                 </div>
-                <div class="textAbility">{{ arts.passive.description }}</div>
+                <div class="textAbility">{{ arts.passive.description.replace(/<\/?[^>]+(>|$)/g, "") }}</div>
             </div>
 
             <div v-for="spell in arts.spells" :key="spell.id" class="spellsChamp">
@@ -28,7 +28,7 @@
                 </div>
                 <div>Coldown skills: {{ spell.cooldownBurn }}</div>
                 <div>Mana cost: {{ spell.costBurn }}</div>
-                <div class="textAbility">{{ spell.description }}</div>
+                <div class="textAbility">{{ spell.description.replace(/<\/?[^>]+(>|$)/g, "") }}</div>
 
             </div>
 

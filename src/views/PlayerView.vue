@@ -192,7 +192,27 @@ export default {
             item: null,
         }
     },
+     beforeRouteUpdate(to) {
+        searchPlayers(to.params.playerName).then(data => {
+            this.playerInfo = data
+            return data
+        })
+            .then(data => { return searchMatches(data.puuid) })
+            .then(data => { this.playerMathesId = data; return data; })
+            .then(data => {
+                // this.infoAbuttMatch = data;
 
+                data.forEach(element => {
+                    infoAbuttMatch(element).then(data => { this.matchesInfos.push(data) })
+
+
+                });
+
+
+
+
+            })
+    },
     mounted() {
         searchPlayers(this.$route.params.playerName).then(data => {
             this.playerInfo = data
