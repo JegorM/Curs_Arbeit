@@ -5,39 +5,29 @@
 			<div class="artChamp">
 				<div class="loreChemp">{{ arts.lore }}</div>
 				<!-- {{ arts.stats }}  -->
-				<img
-					:src="`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${this.championID}_0.jpg`"
-					class="champImg"
-				/>
+				<img :src="`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${this.championID}_0.jpg`"
+					class="champImg" />
 			</div>
 
 			<div class="spellsChamp">
 				<div class="abilityAndName">
 					<div>{{ arts.passive.name }}</div>
-					<img
-						:src="`http://ddragon.leagueoflegends.com/cdn/12.22.1/img/passive/${arts.passive.image.full}`"
-					/>
+					<img :src="`http://ddragon.leagueoflegends.com/cdn/12.22.1/img/passive/${arts.passive.image.full}`" />
 				</div>
 				<div class="textAbility">
-					{{ arts.passive.description.replace(/<\/?[^>]+(>|$)/g, '') }}
+					{{ getSpellDescription(arts.passive.description) }}
 				</div>
 			</div>
 
-			<div
-				v-for="spell in arts.spells"
-				:key="spell.id"
-				class="spellsChamp"
-			>
+			<div v-for="spell in arts.spells" :key="spell.id" class="spellsChamp">
 				<div class="abilityAndName">
 					<div>{{ spell.name }}</div>
-					<img
-						:src="`http://ddragon.leagueoflegends.com/cdn/12.22.1/img/spell/${spell.id}.png`"
-					/>
+					<img :src="`http://ddragon.leagueoflegends.com/cdn/12.22.1/img/spell/${spell.id}.png`" />
 				</div>
 				<div>Coldown skills: {{ spell.cooldownBurn }}</div>
 				<div>Mana cost: {{ spell.costBurn }}</div>
 				<div class="textAbility">
-					{{ spell.description.replace(/<\/?[^>]+(>|$)/g, '') }}
+					{{ getSpellDescription(spell.description) }}
 				</div>
 			</div>
 
@@ -63,6 +53,12 @@ export default {
 			this.arts = data
 			console.log(data)
 		})
+	},
+	methods: {
+		getSpellDescription(description) {
+			return description
+			// return description.replace(/<\/?[^>]+(>|$)/g, '')
+		}
 	}
 }
 </script>
