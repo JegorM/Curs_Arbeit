@@ -1,23 +1,11 @@
 <template>
-	<div class="container">
-		<router-link
-			class="logo"
-			to="/"
-		></router-link>
+	<div class="container bg-red-200">
+		<router-link class="logo" to="/"></router-link>
 		<div class="playerSearch">
-			<input
-				v-model="searchPlayerMessage"
-				type="search"
-				class="search"
-				placeholder="search for a player"
-				v-on:keydown.enter="searchPlayer"
-			/>
+			<input v-model="searchPlayerMessage" type="search" class="search" placeholder="search for a player"
+				v-on:keydown.enter="searchPlayer" />
 			<p>
-				<select
-					name=""
-					id=""
-					class="servLeag"
-				>
+				<select name="" id="" class="servLeag">
 					<!-- <option value="">EUNE</option>
                     <option value="">EUW</option>
                     <option value="">NA</option>
