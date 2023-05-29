@@ -1,6 +1,6 @@
 <template>
 	<template v-if="arts !== null">
-		<div class="mt-10 max-w-[1100px] mx-auto bg-white py-4 px-4 rounded-lg">
+		<div class="bg-white mt-10 max-w-[1100px] mx-auto py-4 px-4 rounded-lg shadow-[0px_0px_15px] shadow-slate-200">
 			<div class="mx-auto h-[717px] bg-no-repeat relative rounded-lg" :style="{
 				'backgroundImage': `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championID}_0.jpg)`
 			}">
