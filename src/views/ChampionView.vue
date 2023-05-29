@@ -1,41 +1,49 @@
 <template>
 	<template v-if="arts !== null">
 		<div class="bg-white mt-10 max-w-[1100px] mx-auto py-4 px-4 rounded-lg shadow-[0px_0px_15px] shadow-slate-200">
-			<div class="mx-auto h-[717px] bg-no-repeat relative rounded-lg" :style="{
-				'backgroundImage': `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championID}_0.jpg)`
-			}">
-				<div class="absolute bottom-36 flex gap-x-7 items-center">
-					<!-- <img :src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/champion/${championID}.png`" alt=""> -->
-					<div class="text-white ml-12">
-						<div class="text-shadow-md text-5xl">{{ championID }}</div>
-						<div class="text-shadow-sm mt-3 max-w-xl drop-shadow-2xl shadow-black z-10">{{ arts.lore }}</div>
-					</div>
+
+			<div class="flex gap-x-7 items-center">
+				<img class="rounded-md w-24 h-24"
+					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/champion/${championID}.png`" alt="">
+				<div class="text-slate-700">
+					<div class="text-5xl">{{ championID }}</div>
 				</div>
 			</div>
 
-			<div class="px-4 py-2 rounded-lg  flex flex-col gap-y-2 mt-5">
-				<div class="">
+
+			<div class="mt-5 mx-auto h-[717px] bg-no-repeat relative rounded-lg" :style="{
+				'backgroundImage': `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championID}_0.jpg)`
+			}">
+				<div
+					class="absolute w-3/6 bg-gray-50 bg-opacity-80 rounded-xl bottom-0 left-0 px-3 py-3 mb-4 ml-4 drop-shadow-2xl shadow-black z-10">
+					<div class="text-slate-800">{{ arts.lore }}</div>
+				</div>
+			</div>
+
+			<div class="px-4 py-2 rounded-lg flex flex-col gap-y-2 mt-5">
+
+				<div class="flex gap-x-4 items-center">
 					<div class="text-xl text-transparent font-medium bg-clip-text bg-gradient-to-r from-purple-400 to-sky-400">
-						Passive</div>
-					<div class="flex gap-x-4">
-						<img class="mt-1 w-16 h-16 rounded-md"
-							:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/passive/${arts.passive.image.full}`" />
-						<div class="">
-							<div class="text-xl text-slate-900">{{ arts.passive.name }}</div>
-							<div class="text-slate-700" v-html="arts.passive.description"></div>
-						</div>
+						P</div>
+					<img class="mt-1 w-16 h-16 rounded-md"
+						:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/passive/${arts.passive.image.full}`" />
+					<div class="">
+						<div class="text-xl text-slate-900">{{ arts.passive.name }}</div>
+						<div class="text-slate-700" v-html="arts.passive.description"></div>
 					</div>
 				</div>
 
 				<div v-for="(spell, spellIndex) in arts.spells" :key="spell.id" class="">
-					<div
-						class="text-xl text-transparent font-medium bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1">
-						{{ spellsKeys[spellIndex] }}
-					</div>
+					<div class="flex gap-x-4 items-start">
+						<div class="flex gap-x-4 items-center">
+							<div
+								class="text-xl text-transparent font-medium bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1">
+								{{ spellsKeys[spellIndex] }}
+							</div>
 
-					<div class="flex gap-x-4">
-						<img class="mt-1 w-16 h-16 rounded-md"
-							:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/spell/${spell.id}.png`" />
+							<img class="mt-1 w-16 h-16 rounded-md"
+								:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/spell/${spell.id}.png`" />
+						</div>
 						<div class="">
 							<div class="text-xl text-slate-900">{{ spell.name }}</div>
 							<div class="text-slate-700" v-html="spell.description"></div>
@@ -92,7 +100,7 @@ export default {
 
 		getChampionsArt(this.championID).then(data => {
 			this.arts = data
-			console.log(data)
+			// console.log(data)
 		})
 	},
 	methods: {

@@ -1,7 +1,7 @@
 <template>
-	<div class="h-full mx-auto flex flex-col " v-for="matchInfo in matchesInfo" :key="matchInfo.metadata.matchId">
-		<PlayerViewMatch :matchInfo="matchInfo" />
-		<div class="mt-10 mb-7 w-11/12 mx-auto bg-gray-200 h-[1px]"></div>
+	<div class="h-full mx-auto flex flex-col" v-for="matchInfo in matchesInfo" :key="matchInfo.metadata.matchId">
+		<PlayerViewMatch :matchInfo="matchInfo" :summonerName="summonerName" />
+		<div class="mt-5 mb-5 w-11/12 mx-auto bg-gray-200 h-[1px]"></div>
 	</div>
 </template>
 
@@ -11,7 +11,7 @@ import PlayerViewMatch from './PlayerViewMatch.vue'
 
 export default {
 	components: { PlayerViewMatch },
-	props: ['matchesInfo'],
+	props: ['matchesInfo', 'summonerName'],
 }
 </script>
 

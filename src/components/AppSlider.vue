@@ -2,10 +2,8 @@
 	<template v-if="arts !== null">
 		<div class="containerSlaider">
 			<div>
-				<img
-					:src="`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${this.championID}_0.jpg`"
-					class="champImg"
-				/>
+				<img :src="`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${this.championID}_0.jpg`"
+					class="champImg" />
 			</div>
 		</div>
 	</template>
@@ -26,7 +24,7 @@ export default {
 
 		getChampionsArt(this.championID).then(data => {
 			this.arts = data
-			console.log(data)
+			// console.log(data)
 		})
 	}
 }

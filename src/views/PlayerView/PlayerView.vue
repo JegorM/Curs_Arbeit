@@ -2,9 +2,9 @@
 	<div class="pb-5 max-w-[1440px] mx-auto bg-white mt-10 rounded-lg shadow-[0px_0px_15px] shadow-slate-200">
 		<template v-if="playerInfo !== null">
 
-			<PlayerViewHead :playerInfo="playerInfo" />
+			<PlayerViewHead :playerInfo="playerInfo" :playerServer="serverCode" />
 
-			<PlayerViewMathes :matchesInfo="matchesInfo" />
+			<PlayerViewMathes :matchesInfo="matchesInfo" :summonerName="playerInfo.name" />
 		</template>
 
 		<div class="text-xl text-center" v-else>Player <span class="font-bold text-red-600">{{
@@ -39,7 +39,7 @@ export default {
 			serverCode: '',
 			playerInfo: null,
 			playerMathesId: null,
-			matchesInfo: [],
+			matchesInfo: matchesInfo,
 			item: null,
 		}
 	},

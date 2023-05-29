@@ -2,7 +2,7 @@
 
 function getChampionsArt(championId) {
 	return fetch(
-		`http://ddragon.leagueoflegends.com/cdn/12.22.1/data/en_US/champion/${championId}.json`,
+		`http://ddragon.leagueoflegends.com/cdn/13.10.1/data/en_US/champion/${championId}.json`,
 		{
 			method: 'GET'
 		}

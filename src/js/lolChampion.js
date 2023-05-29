@@ -1,5 +1,5 @@
 const LOL_CHAMPIONS_URL =
-	'http://ddragon.leagueoflegends.com/cdn/12.22.1/data/en_US/champion.json'
+	'http://ddragon.leagueoflegends.com/cdn/13.10.1/data/en_US/champion.json'
 
 function getChampionsList() {
 	return fetch(LOL_CHAMPIONS_URL, {

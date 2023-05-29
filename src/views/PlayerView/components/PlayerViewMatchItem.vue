@@ -1,14 +1,22 @@
 <template>
-	<div :class="['flex gap-x-3 w-full items-center', { 'flex-row-reverse': reverse }]">
+	<div :class="['py-2 px-2 flex gap-x-3 w-full items-center bg-gradient-to-r', {
+		'flex-row-reverse': reverse,
+		'from-blue-500 from-[-400%] to-transparent': command === 100,
+		'from-transparent to-red-500 to-[400%]': command === 200
+	}]">
 		<div
 			:class="['flex items-center gap-x-2 h-full w-[200px] overflow-x-hidden', { 'flex-row-reverse text-right': reverse }]">
 			<img class="h-14 w-14"
 				:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/champion/${participant.championName}.png`" alt="" />
 
 			<div class="h-full flex flex-col justify-between">
-				<div class="text-lg inline-block max-w-[135px] text-ellipsis overflow-x-hidden whitespace-nowrap">{{
-					participant.summonerName
-				}}</div>
+				<div :class="['text-lg inline-block max-w-[135px] text-ellipsis overflow-x-hidden whitespace-nowrap', {
+					'font-medium text-purple-600': participant.summonerName === summonerName
+				}]">
+					{{
+						participant.summonerName
+					}}
+				</div>
 
 				<div :class="['flex gap-x-3', { 'flex-row-reverse': reverse }]">
 					<div class="flex gap-x-1 items-center">
@@ -38,31 +46,31 @@
 		</div>
 
 		<div :class="['gap-x-1 gap-y-1 flex max-w-[8em] flex-wrap', { 'flex-row-reverse': reverse }]">
-			<div class="w-7 h-7 bg-gray-100">
+			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
 				<img class="imgIcon" v-if="participant.item0 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item0}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-100">
+			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
 				<img class="imgIcon" v-if="participant.item1 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item1}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-100">
+			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
 				<img class="imgIcon" v-if="participant.item2 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item2}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-100">
+			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
 				<img class="imgIcon" v-if="participant.item3 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item3}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-100">
+			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
 				<img class="imgIcon" v-if="participant.item4 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item4}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-100">
+			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
 				<img class="imgIcon" v-if="participant.item5 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item5}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-100">
+			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
 				<img class="imgIcon" v-if="participant.item6 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item6}.png`" alt="" />
 			</div>
@@ -77,10 +85,8 @@
 				<div class="">{{ participant.assists }}</div>
 			</div>
 
-			<div class="text-base">
-				{{ ((participant.kills + participant.assists) / participant.deaths).toFixed(1) }}
-				<span class="text-sm text-slate-500">KDA</span>
-			</div>
+			<PlayerViewKDA :kills="participant.kills" :deaths="participant.deaths" :assists="participant.assists" />
+
 		</div>
 
 		<div class="text-center min-w-[8em]">
@@ -90,10 +96,9 @@
 					participant.neutralMinionsKilled
 				}} cs - {{ (participant.goldEarned / 1000).toFixed(1) }}k gold
 			</div>
-			<div class="text-gray-600 text-base">
-				{{ ((participant.kills + participant.assists + participant.deaths) * 100 /
-					matchesInfo.info.teams[0].objectives.champion.kills).toFixed(1) }} % KP
-			</div>
+
+			<PlayerViewKP :kills="participant.kills" :assists="participant.assists"
+				:commandKills="this.matchesInfo.info.teams[this.command === 100 ? 0 : 1].objectives.champion.kills" />
 		</div>
 	</div>
 </template>
@@ -102,9 +107,12 @@
 import runesData from '../../../data/runes.json'
 import summoners from '../../../data/summoners.json'
 
+import PlayerViewKDA from './PlayerViewKDA.vue'
+import PlayerViewKP from './PlayerViewKP.vue'
 
 export default {
-	props: ['participant', 'matchesInfo', 'reverse'],
+	components: { PlayerViewKDA, PlayerViewKP },
+	props: ['participant', 'matchesInfo', 'reverse', 'command', 'summonerName'],
 	methods: {
 		getRuneIcon(id) {
 			const rune = runesData.find(item => item.id === id)
@@ -121,15 +129,15 @@ export default {
 		},
 		test(summonerId) {
 			const result = Object.values(summoners.data).find(sum => {
-				console.log("🚀 ~ file: PlayerView.vue:260 ~ result ~ sum:", sum.key)
-				console.log("🚀 ~ file: PlayerView.vue:259 ~ result ~ summonerId:", summonerId)
+				// console.log("🚀 ~ file: PlayerView.vue:260 ~ result ~ sum:", sum.key)
+				// console.log("🚀 ~ file: PlayerView.vue:259 ~ result ~ summonerId:", summonerId)
 
 				return Number(sum.key) === Number(summonerId)
 			})
 
 			return result
 
-		}
+		},
 	}
 }
 </script>
