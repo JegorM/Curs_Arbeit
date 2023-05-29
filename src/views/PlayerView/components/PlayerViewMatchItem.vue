@@ -38,31 +38,31 @@
 		</div>
 
 		<div :class="['gap-x-1 gap-y-1 flex max-w-[8em] flex-wrap', { 'flex-row-reverse': reverse }]">
-			<div class="w-7 h-7 bg-gray-200">
+			<div class="w-7 h-7 bg-gray-100">
 				<img class="imgIcon" v-if="participant.item0 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item0}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-200">
+			<div class="w-7 h-7 bg-gray-100">
 				<img class="imgIcon" v-if="participant.item1 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item1}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-200">
+			<div class="w-7 h-7 bg-gray-100">
 				<img class="imgIcon" v-if="participant.item2 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item2}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-200">
+			<div class="w-7 h-7 bg-gray-100">
 				<img class="imgIcon" v-if="participant.item3 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item3}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-200">
+			<div class="w-7 h-7 bg-gray-100">
 				<img class="imgIcon" v-if="participant.item4 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item4}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-200">
+			<div class="w-7 h-7 bg-gray-100">
 				<img class="imgIcon" v-if="participant.item5 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item5}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-200">
+			<div class="w-7 h-7 bg-gray-100">
 				<img class="imgIcon" v-if="participant.item6 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item6}.png`" alt="" />
 			</div>

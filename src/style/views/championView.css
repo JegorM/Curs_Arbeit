@@ -29,3 +29,11 @@
 	padding: 10px;
 	margin: 20px 10px;
 }
+
+.text-shadow-sm {
+	text-shadow: 1px 1px 5px black;
+}
+
+.text-shadow-md {
+	text-shadow: 1px 1px 5px black;
+}

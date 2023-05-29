@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-gray-50 py-5 max-w-[1440px] mx-auto">
+	<div class="py-5 max-w-[1440px] mx-auto">
 		<template v-if="playerInfo !== null">
 
 			<PlayerViewHead :playerInfo="playerInfo" />

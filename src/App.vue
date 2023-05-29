@@ -1,18 +1,17 @@
 <template>
-	<AppHeader />
-	<AppSlider />
-	<router-view></router-view>
+	<main class="bg-white pb-10">
+		<AppHeader />
+		<router-view></router-view>
+	</main>
 </template>
 
 <script>
 import AppHeader from './components/AppHeader.vue'
-import AppSlider from './components/AppSlider.vue'
 
 export default {
 	name: 'App',
 	components: {
 		AppHeader,
-		AppSlider
 	}
 }
 </script>

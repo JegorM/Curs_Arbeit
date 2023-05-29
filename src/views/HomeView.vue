@@ -1,5 +1,5 @@
 <template>
-	<div class="pt-4 flex flex-wrap justify-between w-full bg-gray-50">
+	<div class="pt-4 flex flex-wrap justify-between w-full max-w-[1440px] mx-auto px-3">
 		<template v-if="champions !== null">
 			<router-link v-for="champion in champions" :key="champion.key" :to="'/champion/' + champion.id" class="ikonChamp">
 				<div class="py-4 px-2 rounded w-[170px] flex flex-col items-center text-center gap-y-2 hover:bg-sky-200">
