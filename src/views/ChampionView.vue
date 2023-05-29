@@ -1,6 +1,6 @@
 <template>
 	<template v-if="arts !== null">
-		<div class="max-w-[1440px] mx-auto">
+		<div class="mt-10 max-w-[1440px] mx-auto">
 			<div class="min-h-[700px] bg-[center_right_6em] bg-no-repeat relative rounded" :style="{
 				'backgroundImage': `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championID}_0.jpg)`
 			}">
@@ -12,7 +12,6 @@
 					</div>
 				</div>
 			</div>
-
 
 			<div class="px-4 py-2 rounded-lg bg-gray-100 flex flex-col gap-y-2 mt-5">
 				<div class="">
