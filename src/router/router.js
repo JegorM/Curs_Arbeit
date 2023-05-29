@@ -8,7 +8,7 @@ const ChampionView = import(
 )
 
 const PlayerView = import(
-	/* webpackChunkName: PlayerView */ '../views/PlayerView.vue'
+	/* webpackChunkName: PlayerView */ '../views/PlayerView/PlayerView.vue'
 )
 
 const routes = [
