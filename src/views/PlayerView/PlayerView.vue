@@ -36,65 +36,60 @@ export default {
 	data() {
 		return {
 			playerName: '',
+			serverCode: '',
 			playerInfo: null,
 			playerMathesId: null,
-			matchesInfo: matchesInfo,
+			matchesInfo: [],
 			item: null,
 		}
 	},
-	beforeRouteUpdate(to) {
-		searchPlayers(to.params.playerName)
+	// beforeRouteUpdate(to) {
+	// 	searchPlayers(to.params.playerName)
+	// 		.then(data => {
+	// 			this.playerInfo = data
+	// 			return data
+	// 		})
+	// 		.then(data => {
+	// 			return searchMatches(data.puuid)
+	// 		})
+	// 		.then(data => {
+	// 			this.playerMathesId = data
+	// 			return data
+	// 		})
+	// 		.then(data => {
+	// 			// this.infoAbuttMatch = data;
+
+	// 			data.forEach(element => {
+	// 				infoAbuttMatch(element).then(data => {
+	// 					this.matchesInfo.push(data)
+	// 				})
+	// 			})
+	// 		})
+	// },
+	mounted() {
+		this.playerName = this.$route.params.playerName;
+		this.serverCode = this.$route.params.serverCode;
+
+		searchPlayers(this.playerName, this.serverCode)
 			.then(data => {
 				this.playerInfo = data
-				return data
-			})
-			.then(data => {
-				return searchMatches(data.puuid)
-			})
-			.then(data => {
-				this.playerMathesId = data
-				return data
-			})
-			.then(data => {
-				// this.infoAbuttMatch = data;
 
-				data.forEach(element => {
+				return data
+			})
+			.then(playerInfo => {
+				return searchMatches(playerInfo.puuid, this.serverCode)
+			})
+			.then(matchesIds => {
+				this.playerMathesId = matchesIds
+
+
+				matchesIds.slice(0, 3).forEach(element => {
 					infoAbuttMatch(element).then(data => {
 						this.matchesInfo.push(data)
 					})
 				})
 			})
-	},
-	mounted() {
-		this.playerName = this.$route.params.playerName;
 
-		searchPlayers(this.$route.params.playerName)
-			.then(data => {
-				this.playerInfo = data
-				return data
-			})
-			.then(data => {
-				return searchMatches(data.puuid)
-			})
-			.then(data => {
-				this.playerMathesId = data
-				return data
-			})
-			.then(data => {
-				// this.infoAbuttMatch = data;
-
-				// infoAbuttMatch(data[0]).then(data => {
-				// 	this.matchesInfo.push(data)
-				// })
-
-				// data.forEach(element => {
-				// 	infoAbuttMatch(element).then(data => {
-				// 		this.matchesInfo.push(data)
-				// 	})
-
-				// })
-
-			})
 		getItems().then(data => {
 			this.item = data
 		})

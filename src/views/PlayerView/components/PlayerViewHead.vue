@@ -2,7 +2,7 @@
 	<div>
 		<div class="flex p-5 items-center gap-x-5">
 			<img class="w-32 h-32 rounded-full"
-				:src="`https://ddragon.leagueoflegends.com/cdn/12.23.1/img/profileicon/${playerInfo.profileIconId}.png`" alt="" />
+				:src="`https://ddragon.leagueoflegends.com/cdn/13.10.1/img/profileicon/${playerInfo.profileIconId}.png`" alt="" />
 			<div class="">
 				<div class="text-3xl">{{ playerInfo.name }}</div>
 				<div class="text-lg">level: {{ playerInfo.summonerLevel }}</div>

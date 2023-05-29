@@ -14,7 +14,7 @@ const PlayerView = import(
 const routes = [
 	{ path: '/', component: HomeView },
 	{ path: '/champion/:id', component: ChampionView },
-	{ path: '/player/:playerName', component: PlayerView }
+	{ path: '/player/:serverCode/:playerName', component: PlayerView }
 ]
 
 const router = createRouter({

@@ -1,25 +1,25 @@
 <template>
 	<template v-if="arts !== null">
-		<div class="mt-10 max-w-[1440px] mx-auto">
-			<div class="min-h-[700px] bg-[center_right_6em] bg-no-repeat relative rounded" :style="{
+		<div class="mt-10 max-w-[1100px] mx-auto bg-white py-4 px-4 rounded-lg">
+			<div class="mx-auto h-[717px] bg-no-repeat relative rounded-lg" :style="{
 				'backgroundImage': `url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championID}_0.jpg)`
 			}">
 				<div class="absolute bottom-36 flex gap-x-7 items-center">
-					<img :src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${championID}.png`" alt="">
-					<div class="text-white">
+					<!-- <img :src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/champion/${championID}.png`" alt=""> -->
+					<div class="text-white ml-12">
 						<div class="text-shadow-md text-5xl">{{ championID }}</div>
 						<div class="text-shadow-sm mt-3 max-w-xl drop-shadow-2xl shadow-black z-10">{{ arts.lore }}</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="px-4 py-2 rounded-lg bg-gray-100 flex flex-col gap-y-2 mt-5">
+			<div class="px-4 py-2 rounded-lg  flex flex-col gap-y-2 mt-5">
 				<div class="">
 					<div class="text-xl text-transparent font-medium bg-clip-text bg-gradient-to-r from-purple-400 to-sky-400">
 						Passive</div>
 					<div class="flex gap-x-4">
 						<img class="mt-1 w-16 h-16 rounded-md"
-							:src="`http://ddragon.leagueoflegends.com/cdn/12.22.1/img/passive/${arts.passive.image.full}`" />
+							:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/passive/${arts.passive.image.full}`" />
 						<div class="">
 							<div class="text-xl text-slate-900">{{ arts.passive.name }}</div>
 							<div class="text-slate-700" v-html="arts.passive.description"></div>
@@ -35,7 +35,7 @@
 
 					<div class="flex gap-x-4">
 						<img class="mt-1 w-16 h-16 rounded-md"
-							:src="`http://ddragon.leagueoflegends.com/cdn/12.22.1/img/spell/${spell.id}.png`" />
+							:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/spell/${spell.id}.png`" />
 						<div class="">
 							<div class="text-xl text-slate-900">{{ spell.name }}</div>
 							<div class="text-slate-700" v-html="spell.description"></div>

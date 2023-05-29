@@ -8,20 +8,25 @@
 
 			<div class="inline-flex mr-20">
 				<input class="px-4 py-2 rounded-l-xl text-gray-700" v-model="searchPlayerMessage" type="search"
-					placeholder="search for a player" v-on:keydown.enter="searchPlayer" />
+					placeholder="search for a player" @keydown.enter="searchPlayer" />
 				<div>
-					<select class="px-2 py-2 rounded-r-xl bg-slate-200 text-slate-700">
-						<!-- <option value="">EUNE</option>
-						<option value="">EUW</option>
-						<option value="">NA</option>
-						<option value="">BR</option>
-						<option value="">LAN</option>
-						<option value="">LAS</option>
-						<option value="">OCE</option>
-						<option value="">KR</option>
-						<option value="">TR</option>
-						<option value="">JP</option> -->
-						<option value="">RU</option>
+					<select class="px-2 py-2 rounded-r-xl bg-slate-200 text-slate-700" v-model="selectValue">
+						<option value="BR1">BR</option>
+						<option value="EUN1">EUN</option>
+						<option value="EUW1" selected>EUW</option>
+						<option value="JP1">JP</option>
+						<option value="KR">KR</option>
+						<option value="LA1">LA1</option>
+						<option value="LA2">LA2</option>
+						<option value="NA1">NA</option>
+						<option value="OC1">OC</option>
+						<option value="TR1">TR</option>
+						<option value="RU">RU</option>
+						<option value="PH2">PH</option>
+						<option value="SG2">SG</option>
+						<option value="TH2">TH</option>
+						<option value="TW2">TW</option>
+						<option value="VN2">VN</option>
 					</select>
 				</div>
 			</div>
@@ -30,23 +35,17 @@
 </template>
 
 <script>
-// import { searchPlayers, searchMatches } from '../js/PlayerAndMatches'
-
 export default {
 	data() {
 		return {
-			massage: null,
-			searchPlayerMessage: ''
+			searchPlayerMessage: '',
+			selectValue: 'RU'
 		}
 	},
 	methods: {
 		searchPlayer() {
-			this.$router.push('/player/' + this.searchPlayerMessage)
-			// searchPlayers(this.searchPlayerMessage).then(data => { console.log(data) });
+			this.$router.push(`/player/${this.selectValue}/${this.searchPlayerMessage}`)
 		}
-		// searchMatch() {
-		//     searchMatches().then(data => { console.log("fsdfsdf", data) });
-		// }
 	}
 }
 </script>

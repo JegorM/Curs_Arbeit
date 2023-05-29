@@ -1,5 +1,5 @@
 <template>
-	<main class="bg-white pb-10">
+	<main class="bg-gray-50 pb-10">
 		<AppHeader />
 		<router-view></router-view>
 	</main>
