@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-gray-50 py-5">
+	<div class="bg-gray-50 py-5 max-w-[1440px] mx-auto">
 		<template v-if="playerInfo !== null">
 
 			<PlayerViewHead :playerInfo="playerInfo" />
@@ -17,6 +17,8 @@
 </template>
 
 <script>
+/* eslint-disable */
+
 import {
 	searchPlayers,
 	searchMatches,
@@ -24,9 +26,10 @@ import {
 } from '../../js/PlayerAndMatches'
 import { getItems } from '../../js/items.js'
 
-
 import PlayerViewHead from './components/PlayerViewHead.vue'
 import PlayerViewMathes from './components/PlayerViewMathes.vue'
+
+import matchesInfo from './matchesInfo.json'
 
 export default {
 	components: { PlayerViewHead, PlayerViewMathes },
@@ -35,7 +38,7 @@ export default {
 			playerName: '',
 			playerInfo: null,
 			playerMathesId: null,
-			matchesInfo: [],
+			matchesInfo: matchesInfo,
 			item: null,
 		}
 	},
@@ -80,15 +83,17 @@ export default {
 			.then(data => {
 				// this.infoAbuttMatch = data;
 
-				infoAbuttMatch(data[0]).then(data => {
-					this.matchesInfo.push(data)
-				})
+				// infoAbuttMatch(data[0]).then(data => {
+				// 	this.matchesInfo.push(data)
+				// })
 
 				// data.forEach(element => {
 				// 	infoAbuttMatch(element).then(data => {
 				// 		this.matchesInfo.push(data)
 				// 	})
+
 				// })
+
 			})
 		getItems().then(data => {
 			this.item = data

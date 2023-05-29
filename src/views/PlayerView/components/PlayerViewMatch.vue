@@ -1,138 +1,114 @@
 <template>
-	<div class="max-w-[50%]">
-		<div :class="['flex bg-white w-full items-center', { 'flex-row-reverse': reverse }]">
-			<div :class="['flex min-w-[200px]', { 'flex-row-reverse text-right': reverse }]">
-				<img class="h-14 w-14"
-					:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/${participant.championName}.png`" alt="" />
+	<template v-if="matchInfoFormated">
+		<div class="px-5">
+			<div class="py-3 px-3 rounded-t-xl flex justify-between items-center mb-2">
+				<div class="flex gap-x-20 items-center">
+					<div class="text-blue-800 rounded-xl px-3 py-1 bg-blue-300">Blue team</div>
 
-				<div class="px-2 h-full flex flex-col justify-between">
-					<div class="text-lg">{{ participant.summonerName }}</div>
+					<VictoryOrDefeat :win="matchInfo.info.teams[0].win" />
 
-					<div class="flex gap-x-3">
-						<div class="flex gap-x-1 items-center">
-							<img class="w-5 h-5"
-								:src="`https://ddragon.canisback.com/img/${getRuneIcon(participant.perks.styles[0].style).icon}`"
-								:alt="getRuneIcon(participant.perks.styles[0].style).name">
-
-							<img class="w-4 h-4"
-								:src="`https://ddragon.canisback.com/img/${getRuneIcon(participant.perks.styles[1].style).icon}`"
-								:alt="getRuneIcon(participant.perks.styles[1].style).name">
-						</div>
-
-
-						<div class="flex gap-x-1">
-							<img class="w-5 h-5"
-								:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/spell/${test(participant.summoner1Id).image.full}`"
-								alt="">
-
-							<img class="w-5 h-5"
-								:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/spell/${test(participant.summoner2Id).image.full}`"
-								alt="">
-						</div>
+					<div class="flex gap-x-1 justify-center text-lg text-gray-800">
+						<div class="">{{ teamsKDA[100].kills }}</div>
+						<span> / </span>
+						<div class="">{{ teamsKDA[100].deaths }}</div>
+						<span> / </span>
+						<div class="">{{ teamsKDA[100].assists }}</div>
 					</div>
+
+					<div class="">{{ teamsKDA[100].gold }} <span class="text-slate-500">gold</span></div>
+				</div>
+
+				<div class="flex flex-row-reverse items-center gap-x-20">
+					<div class="text-red-800 rounded-xl px-3 py-1 bg-red-300">Red team</div>
+
+					<VictoryOrDefeat :win="matchInfo.info.teams[1].win" />
+
+					<div class="flex gap-x-1 justify-center text-lg text-gray-800">
+						<div class="">{{ teamsKDA[200].kills }}</div>
+						<span> / </span>
+						<div class="">{{ teamsKDA[200].deaths }}</div>
+						<span> / </span>
+						<div class="">{{ teamsKDA[200].assists }}</div>
+					</div>
+
+					<div class="">{{ teamsKDA[200].gold }} <span class="text-slate-500">gold</span></div>
 				</div>
 			</div>
 
-			<template v-if="item !== null">
-				<div class="ml-7 gap-x-1 gap-y-1 flex max-w-[8em] flex-wrap">
-					<div class="w-7 h-7 bg-gray-200">
-						<img class="imgIcon" v-if="participant.item0 != 0"
-							:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item0}.png`" alt="" />
-					</div>
-					<div class="w-7 h-7 bg-gray-200">
-						<img class="imgIcon" v-if="participant.item1 != 0"
-							:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item1}.png`" alt="" />
-					</div>
-					<div class="w-7 h-7 bg-gray-200">
-						<img class="imgIcon" v-if="participant.item2 != 0"
-							:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item2}.png`" alt="" />
-					</div>
-					<div class="w-7 h-7 bg-gray-200">
-						<img class="imgIcon" v-if="participant.item3 != 0"
-							:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item3}.png`" alt="" />
-					</div>
-					<div class="w-7 h-7 bg-gray-200">
-						<img class="imgIcon" v-if="participant.item4 != 0"
-							:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item4}.png`" alt="" />
-					</div>
-					<div class="w-7 h-7 bg-gray-200">
-						<img class="imgIcon" v-if="participant.item5 != 0"
-							:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item5}.png`" alt="" />
-					</div>
-					<div class="w-7 h-7 bg-gray-200">
-						<img class="imgIcon" v-if="participant.item6 != 0"
-							:src="`http://ddragon.leagueoflegends.com/cdn/12.23.1/img/item/${participant.item6}.png`" alt="" />
-					</div>
-				</div>
-			</template>
+			<div class="flex flex-col gap-y-4">
+				<div class="flex justify-between" v-for="(_, index) in matchInfoFormated[100]"
+					:key="matchInfoFormated[100][index].puuid">
+					<PlayerViewMatchItem :participant="matchInfoFormated[100][index]" :matchesInfo="matchInfo" />
 
-			<div class="ml-7 text-center">
-				<div class="flex gap-x-1 justify-center text-lg text-gray-800">
-					<div class="">{{ participant.kills }}</div>
-					<span> / </span>
-					<div class="">{{ participant.deaths }}</div>
-					<span> / </span>
-					<div class="">{{ participant.assists }}</div>
+					<PlayerViewMatchItem :participant="matchInfoFormated[200][index]" :matchesInfo="matchInfo" :reverse="true" />
 				</div>
-
-				<div class="text-base">
-					{{ ((participant.kills + participant.assists) / participant.deaths).toFixed(1) }}
-					<span class="text-sm text-slate-500">KDA</span>
-				</div>
-			</div>
-
-			<div class="ml-7 text-center">
-				<div class=" text-base text-gray-800">
-					{{
-						participant.totalMinionsKilled +
-						participant.neutralMinionsKilled
-					}} cs - {{ (participant.goldEarned / 1000).toFixed(1) }}k gold
-				</div>
-				<div class="text-gray-600 text-base">
-					{{ ((participant.kills + participant.assists + participant.deaths) * 100 /
-						matchesInfo.info.teams[0].objectives.champion.kills).toFixed(1) }} % KP
-				</div>
-			</div>
-
-			<div class="">
-				<div>{{ participant.visionScore }}</div>
 			</div>
 		</div>
-	</div>
+	</template>
 </template>
 
 <script>
-import runesData from '../../../data/runes.json'
-import summoners from '../../../data/summoners.json'
-
+import PlayerViewMatchItem from './PlayerViewMatchItem.vue'
+import VictoryOrDefeat from './VictoryOrDefeat.vue'
 
 export default {
-	props: ['participant', 'matchesInfo', 'reverse'],
-	methods: {
-		getRuneIcon(id) {
-			const rune = runesData.find(item => item.id === id)
+	components: { PlayerViewMatchItem, VictoryOrDefeat },
+	props: ['matchInfo'],
+	computed: {
+		matchInfoFormated() {
+			if (!this.matchInfo) return this.matchInfo
 
-			if (!rune) return {
-				icon: '',
-				name: 'undefined'
+			const participants = this.matchInfo.info.participants
+
+			if (!participants) {
+				return participants
 			}
 
-			return {
-				icon: rune.icon,
-				name: rune.name
+			const result = {
+				100: [],
+				200: []
 			}
+
+			participants.forEach(participant => {
+				result[participant.teamId].push(participant)
+			})
+
+			console.log("🚀 ~ file: PlayerViewMathes.vue:49 ~ matchesInfoFormated ~ result:", result)
+
+			return result
 		},
-		test(summonerId) {
-			const result = Object.values(summoners.data).find(sum => {
-				console.log("🚀 ~ file: PlayerView.vue:260 ~ result ~ sum:", sum.key)
-				console.log("🚀 ~ file: PlayerView.vue:259 ~ result ~ summonerId:", summonerId)
+		teamsKDA() {
+			const result = {
+				100: {
+					kills: 0,
+					deaths: 0,
+					assists: 0,
+					gold: 0
+				},
+				200: {
+					kills: 0,
+					deaths: 0,
+					assists: 0,
+					gold: 0
+				}
+			}
 
-				return Number(sum.key) === Number(summonerId)
+			const participants = this.matchInfo.info.participants
+
+			if (!participants) {
+				return result
+			}
+
+			participants.forEach(participant => {
+				result[participant.teamId].kills += participant.kills
+				result[participant.teamId].deaths += participant.deaths
+				result[participant.teamId].assists += participant.assists
+				result[participant.teamId].gold += participant.goldEarned
 			})
 
 			return result
-
 		}
 	}
 }
 </script>
+
