@@ -84,7 +84,7 @@ export default {
 
 
 				matchesIds.slice(0, 3).forEach(element => {
-					infoAbuttMatch(element).then(data => {
+					infoAbuttMatch(element, this.serverCode).then(data => {
 						this.matchesInfo.push(data)
 					})
 				})
