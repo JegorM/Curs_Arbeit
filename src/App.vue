@@ -1,5 +1,5 @@
 <template>
-	<main class="bg-gray-50 pb-10 flex flex-col min-h-screen h-full">
+	<main class="bg-gray-50 pb-10 flex flex-col min-h-screen h-full items-center">
 		<AppHeader />
 		<router-view></router-view>
 	</main>

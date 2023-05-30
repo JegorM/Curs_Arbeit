@@ -1,16 +1,18 @@
 <template>
-	<header class="bg-sky-500 shadow-lg">
-		<div class="max-w-[1440px] mx-auto py-4 flex justify-between gap-x-36">
-			<router-link class="text-4xl font-medium text-whitegroup group" to="/">
+	<header class="bg-sky-500 shadow-lg px-6 w-full">
+		<div class="max-w-[1440px] mx-auto py-4 flex justify-between gap-x-3 md:gap-x-0">
+			<router-link class="sm:text-4xl text-3xl font-medium text-whitegroup group" to="/">
 				<span class="text-white group-hover:text-green-400 transition-all">Jungle</span>
 				<span class="text-yellow-400 group-hover:text-white transition-all">Diff</span>
 			</router-link>
 
-			<div class="inline-flex mr-20">
-				<input class="px-4 py-2 rounded-l-xl text-gray-700" v-model="searchPlayerMessage" type="search"
-					placeholder="search for a player" @keydown.enter="searchPlayer" />
+			<div class="inline-flex">
+				<input class="px-4 py-2 rounded-l-xl text-gray-700 max-w-[250px] w-full" v-model="searchPlayerMessage"
+					type="search" placeholder="search for a player" @keydown.enter="searchPlayer" />
 				<div>
-					<select class="px-2 py-2 rounded-r-xl bg-slate-200 text-slate-700" v-model="selectValue">
+					<select
+						class="md:px-2 md:text-base appearance-none text-sm h-full min-w-10 py-2 px-2 rounded-r-xl bg-slate-200 text-slate-700"
+						v-model="selectValue">
 						<option value="BR1">BR</option>
 						<option value="EUN1">EUN</option>
 						<option value="EUW1" selected>EUW</option>
