@@ -133,6 +133,8 @@ export default {
 			}
 		},
 		test(summonerId) {
+			console.log(summonerId);
+
 			const result = Object.values(summoners.data).find(sum => {
 				// console.log("🚀 ~ file: PlayerView.vue:260 ~ result ~ sum:", sum.key)
 				// console.log("🚀 ~ file: PlayerView.vue:259 ~ result ~ summonerId:", summonerId)
@@ -140,8 +142,11 @@ export default {
 				return Number(sum.key) === Number(summonerId)
 			})
 
-			return result
+			if (!result) return {
+				image: { full: '' }
+			}
 
+			return result
 		},
 		getChampionFullImageByKey(key) {
 			console.log("🚀 ~ file: PlayerViewMatchItem.vue:147 ~ getChampionFullImageByKey ~ key:", key)

@@ -22,9 +22,24 @@ function searchPlayers(username, platform) {
 			headers: HEADERS
 		}
 	)
-		.then(response => response.json())
-		.catch(error => {
-			throw new Error('Some gonna wrong)' + error)
+		.then(response => {
+			console.log(response)
+			console.log(response.ok)
+
+			if (response.status === 200) {
+				return response.json()
+			}
+
+			return null
+		})
+		.then(data => {
+			console.log(data)
+
+			return data
+		})
+		.catch(() => {
+			return null
+			// throw new Error('Some gonna wrong)' + error)
 		})
 }
 
