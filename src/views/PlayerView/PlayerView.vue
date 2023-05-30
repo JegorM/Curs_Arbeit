@@ -4,7 +4,7 @@
 
 			<PlayerViewHead :playerInfo="playerInfo" :playerServer="serverCode" />
 
-			<PlayerViewMathes :matchesInfo="matchesInfo" :summonerName="playerInfo.name" />
+			<PlayerViewMathes :matchesInfo="matchesInfo" :summonerName="playerInfo.name" :playerServer="serverCode" />
 		</template>
 
 		<div class="text-xl text-center" v-else>Player <span class="font-bold text-red-600">{{
@@ -24,7 +24,6 @@ import {
 	searchMatches,
 	infoAbuttMatch
 } from '../../js/PlayerAndMatches'
-import { getItems } from '../../js/items.js'
 
 import PlayerViewHead from './components/PlayerViewHead.vue'
 import PlayerViewMathes from './components/PlayerViewMathes.vue'
@@ -39,33 +38,35 @@ export default {
 			serverCode: '',
 			playerInfo: null,
 			playerMathesId: null,
-			matchesInfo: matchesInfo,
-			item: null,
+			matchesInfo: [],
 		}
 	},
-	// beforeRouteUpdate(to) {
-	// 	searchPlayers(to.params.playerName)
-	// 		.then(data => {
-	// 			this.playerInfo = data
-	// 			return data
-	// 		})
-	// 		.then(data => {
-	// 			return searchMatches(data.puuid)
-	// 		})
-	// 		.then(data => {
-	// 			this.playerMathesId = data
-	// 			return data
-	// 		})
-	// 		.then(data => {
-	// 			// this.infoAbuttMatch = data;
+	beforeRouteUpdate(to) {
+		this.playerName = to.params.playerName;
+		this.serverCode = to.params.serverCode;
 
-	// 			data.forEach(element => {
-	// 				infoAbuttMatch(element).then(data => {
-	// 					this.matchesInfo.push(data)
-	// 				})
-	// 			})
-	// 		})
-	// },
+		this.matchesInfo = []
+
+		searchPlayers(this.playerName, this.serverCode)
+			.then(data => {
+				this.playerInfo = data
+
+				return data
+			})
+			.then(playerInfo => {
+				return searchMatches(playerInfo.puuid, this.serverCode)
+			})
+			.then(matchesIds => {
+				this.playerMathesId = matchesIds
+
+
+				matchesIds.slice(0, 3).forEach(element => {
+					infoAbuttMatch(element, this.serverCode).then(data => {
+						this.matchesInfo.push(data)
+					})
+				})
+			})
+	},
 	mounted() {
 		this.playerName = this.$route.params.playerName;
 		this.serverCode = this.$route.params.serverCode;
@@ -90,9 +91,6 @@ export default {
 				})
 			})
 
-		getItems().then(data => {
-			this.item = data
-		})
 	}
 
 }

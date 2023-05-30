@@ -41,10 +41,10 @@
 				<div class="flex justify-between" v-for="(_, index) in matchInfoFormated[100]"
 					:key="matchInfoFormated[100][index].puuid">
 					<PlayerViewMatchItem :participant="matchInfoFormated[100][index]" :matchesInfo="matchInfo" :command="100"
-						:summonerName="summonerName" />
+						:summonerName="summonerName" :playerServer="playerServer" />
 
 					<PlayerViewMatchItem :participant="matchInfoFormated[200][index]" :matchesInfo="matchInfo" :command="200"
-						:reverse="true" :summonerName="summonerName" />
+						:reverse="true" :summonerName="summonerName" :playerServer="playerServer" />
 				</div>
 			</div>
 
@@ -71,7 +71,7 @@ import VictoryOrDefeat from './VictoryOrDefeat.vue'
 
 export default {
 	components: { PlayerViewMatchItem, VictoryOrDefeat },
-	props: ['matchInfo', 'summonerName'],
+	props: ['matchInfo', 'summonerName', 'playerServer'],
 	computed: {
 		gameCreationDate() {
 			const data = new Date(this.matchInfo.info.gameCreation)

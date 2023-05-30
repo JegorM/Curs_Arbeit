@@ -18,19 +18,13 @@
 </template>
 
 <script>
-import { getChampionsList } from '../js/lolChampion.js'
+import champions from '../data/champions.json'
 
 export default {
 	data() {
 		return {
-			champions: null
+			champions: champions.data
 		}
-	},
-
-	mounted() {
-		getChampionsList().then(data => {
-			this.champions = data
-		})
 	}
 }
 </script>

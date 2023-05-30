@@ -6,17 +6,20 @@
 	}]">
 		<div
 			:class="['flex items-center gap-x-2 h-full w-[200px] overflow-x-hidden', { 'flex-row-reverse text-right': reverse }]">
-			<img class="h-14 w-14"
-				:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/champion/${participant.championName}.png`" alt="" />
+			<router-link :to="`/champion/${participant.championName}`">
+				<img class="h-14 w-14"
+					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/champion/` + getChampionFullImageByKey(participant.championId)"
+					alt="" />
+			</router-link>
 
 			<div class="h-full flex flex-col justify-between">
-				<div :class="['text-lg inline-block max-w-[135px] text-ellipsis overflow-x-hidden whitespace-nowrap', {
+				<router-link :to="`/player/${playerServer}/${participant.summonerName}`" :class="['text-lg inline-block max-w-[135px] text-ellipsis overflow-x-hidden whitespace-nowrap', {
 					'font-medium text-purple-600': participant.summonerName === summonerName
 				}]">
 					{{
 						participant.summonerName
 					}}
-				</div>
+				</router-link>
 
 				<div :class="['flex gap-x-3', { 'flex-row-reverse': reverse }]">
 					<div class="flex gap-x-1 items-center">
@@ -59,6 +62,10 @@
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item2}.png`" alt="" />
 			</div>
 			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
+				<img class="imgIcon" v-if="participant.item6 != 0"
+					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item6}.png`" alt="" />
+			</div>
+			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
 				<img class="imgIcon" v-if="participant.item3 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item3}.png`" alt="" />
 			</div>
@@ -70,10 +77,7 @@
 				<img class="imgIcon" v-if="participant.item5 != 0"
 					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item5}.png`" alt="" />
 			</div>
-			<div class="w-7 h-7 bg-gray-50 bg-opacity-60">
-				<img class="imgIcon" v-if="participant.item6 != 0"
-					:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${participant.item6}.png`" alt="" />
-			</div>
+
 		</div>
 
 		<div class="text-center min-w-[8em]">
@@ -106,13 +110,14 @@
 <script>
 import runesData from '../../../data/runes.json'
 import summoners from '../../../data/summoners.json'
+import champions from '../../../data/champions.json'
 
 import PlayerViewKDA from './PlayerViewKDA.vue'
 import PlayerViewKP from './PlayerViewKP.vue'
 
 export default {
 	components: { PlayerViewKDA, PlayerViewKP },
-	props: ['participant', 'matchesInfo', 'reverse', 'command', 'summonerName'],
+	props: ['participant', 'matchesInfo', 'reverse', 'command', 'summonerName', 'playerServer'],
 	methods: {
 		getRuneIcon(id) {
 			const rune = runesData.find(item => item.id === id)
@@ -138,6 +143,17 @@ export default {
 			return result
 
 		},
+		getChampionFullImageByKey(key) {
+			console.log("🚀 ~ file: PlayerViewMatchItem.vue:147 ~ getChampionFullImageByKey ~ key:", key)
+
+			const result = Object.values(champions.data).find(item => {
+				return item.key === String(key)
+			})
+
+			if (!result) return ''
+
+			return result.image.full
+		}
 	}
 }
 </script>
