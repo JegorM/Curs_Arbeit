@@ -20,13 +20,21 @@
 				</div>
 			</div>
 
-			<div class="px-4 py-2 rounded-lg flex flex-col gap-y-2 mt-5">
+			<div class="px-4 py-2 rounded-lg flex flex-col gap-y-3 mt-5">
 
 				<div class="flex gap-x-4 items-center">
-					<div class="text-xl text-transparent font-medium bg-clip-text bg-gradient-to-r from-purple-400 to-sky-400">
-						P</div>
-					<img class="mt-1 w-16 h-16 rounded-md"
-						:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/passive/${arts.passive.image.full}`" />
+
+					<div class="flex items-center">
+						<div class="relative w-16 h-16 rounded-md flex items-center justify-center"
+							:style="{ backgroundImage: `url('http://ddragon.leagueoflegends.com/cdn/13.10.1/img/passive/${arts.passive.image.full}')` }">
+							<div class="bg-gray-800 absolute w-full h-full rounded-md  bg-opacity-30 z-0"></div>
+							<div class="text-2xl text-white font-medium z-10">
+								P
+							</div>
+						</div>
+					</div>
+
+
 					<div class="">
 						<div class="text-xl text-slate-900">{{ arts.passive.name }}</div>
 						<div class="text-slate-700" v-html="arts.passive.description"></div>
@@ -34,17 +42,19 @@
 				</div>
 
 				<div v-for="(spell, spellIndex) in arts.spells" :key="spell.id" class="">
-					<div class="flex gap-x-4 items-start">
-						<div class="flex gap-x-4 items-center">
-							<div
-								class="text-xl text-transparent font-medium bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1">
-								{{ spellsKeys[spellIndex] }}
-							</div>
+					<div class="flex items-start gap-x-4">
 
-							<img class="mt-1 w-16 h-16 rounded-md"
-								:src="`http://ddragon.leagueoflegends.com/cdn/13.10.1/img/spell/${spell.id}.png`" />
+						<div class="flex items-center">
+							<div class="relative w-16 h-16 rounded-md flex items-center justify-center"
+								:style="{ backgroundImage: `url('http://ddragon.leagueoflegends.com/cdn/13.10.1/img/spell/${spell.id}.png')` }">
+								<div class="bg-gray-800 absolute w-full h-full rounded-md  bg-opacity-30 z-0"></div>
+								<div class="text-2xl text-white font-medium z-10">
+									{{ spellsKeys[spellIndex] }}
+								</div>
+							</div>
 						</div>
-						<div class="">
+
+						<div class="w-9/12">
 							<div class="text-xl text-slate-900">{{ spell.name }}</div>
 							<div class="text-slate-700" v-html="spell.description"></div>
 
