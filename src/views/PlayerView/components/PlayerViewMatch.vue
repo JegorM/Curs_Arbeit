@@ -1,14 +1,14 @@
 <template>
 	<template v-if="matchInfoFormated">
-		<div class="px-5">
-			<div class="flex justify-between items-center pb-[2px]">
+		<div class="lg:px-5 px-2">
+			<div class="flex justify-between  items-center pb-[2px]">
 				<div
-					class="w-1/2 rounded-t-xl py-3 px-3 flex gap-x-20 items-center bg-gradient-to-r from-blue-500 from-[-400%] to-transparent">
-					<div class="text-blue-800 rounded-xl px-3 py-1">Blue team</div>
+					class="w-1/2 rounded-t-xl min-[540px]:py-3 py-2 px-3 flex min-[540px]:gap-x-0 gap-x-2 min-[540px]:justify-between justify-start items-center bg-gradient-to-r from-blue-500 from-[-400%] to-transparent">
+					<div class="text-blue-800 rounded-xl md:inline-block hidden">Blue team</div>
 
 					<VictoryOrDefeat :win="matchInfo.info.teams[0].win" />
 
-					<div class="flex gap-x-1 justify-center text-lg text-gray-800">
+					<div class="flex gap-x-1 justify-center min-[920px]:text-lg md:text-base text-sm text-gray-800">
 						<div class="">{{ teamsKDA[100].kills }}</div>
 						<span> / </span>
 						<div class="">{{ teamsKDA[100].deaths }}</div>
@@ -16,16 +16,17 @@
 						<div class="">{{ teamsKDA[100].assists }}</div>
 					</div>
 
-					<div class="">{{ teamsKDA[100].gold }} <span class="text-slate-500">gold</span></div>
+					<div class="md:text-base text-sm min-[540px]:inline-block hidden">{{ teamsKDA[100].gold }} <span
+							class="text-slate-500">gold</span></div>
 				</div>
 
 				<div
-					class="w-1/2 rounded-t-xl py-3 px-3 flex flex-row-reverse items-center gap-x-20 bg-gradient-to-r to-red-500 to-[400%] from-transparent">
-					<div class="text-red-800 rounded-xl px-3 py-1">Red team</div>
+					class="w-1/2 rounded-t-xl min-[540px]:py-3 py-2 px-3 flex flex-row-reverse items-center min-[540px]:gap-x-0 gap-x-2 min-[540px]:justify-between justify-start bg-gradient-to-r to-red-500 to-[400%] from-transparent">
+					<div class="text-red-800 rounded-xl md:inline-block hidden">Red team</div>
 
 					<VictoryOrDefeat :win="matchInfo.info.teams[1].win" />
 
-					<div class="flex gap-x-1 justify-center text-lg text-gray-800">
+					<div class="flex gap-x-1 justify-center min-[920px]:text-lg md:text-base text-sm text-gray-800">
 						<div class="">{{ teamsKDA[200].kills }}</div>
 						<span> / </span>
 						<div class="">{{ teamsKDA[200].deaths }}</div>
@@ -33,7 +34,8 @@
 						<div class="">{{ teamsKDA[200].assists }}</div>
 					</div>
 
-					<div class="">{{ teamsKDA[200].gold }} <span class="text-slate-500">gold</span></div>
+					<div class="md:text-base text-sm min-[540px]:inline-block hidden">{{ teamsKDA[200].gold }} <span
+							class="text-slate-500">gold</span></div>
 				</div>
 			</div>
 
@@ -50,16 +52,17 @@
 
 			<div class="flex mt-[2px] ">
 				<div
-					class="w-full rounded-b-xl py-2 bg-gradient-to-r from-blue-500 from-[-200%] to-red-500 to-[200%] via-[50%] via-transparent flex items-center justify-center">
+					class="w-full rounded-b-xl py-2 bg-gradient-to-r from-blue-500 from-[-200%] to-red-500 to-[200%] via-[50%] via-transparent flex items-center justify-center sm:text-base min-[480px]:text-sm text-xs">
 					<div class="flex gap-x-2">
+
+						<div class="text-slate-800">{{ gameType }}</div>
+						<div class="text-slate-300">|</div>
 						<div class="text-slate-600">{{ gameCreationDate }}</div>
 						<div class="text-slate-800">{{ gameCreationTime }}</div>
 						<div class="text-slate-400">-</div>
 						<div class="text-purple-500">{{ gameDuration }}</div>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
 	</template>
@@ -76,6 +79,22 @@ export default {
 		gameCreationDate() {
 			const data = new Date(this.matchInfo.info.gameCreation)
 			return data.toLocaleDateString('en-GB', { timeZone: 'UTC' })
+		},
+
+		gameType() {
+			const gameTypes = {
+				400: 'Normal',
+				420: 'Solo Ranks',
+				440: 'Group Ranks',
+				450: 'ARAM',
+				1400: 'Spellbook'
+			}
+
+
+			const result = gameTypes[this.matchInfo.info.queueId]
+			console.log("🚀 ~ file: PlayerViewMatch.vue:94 ~ gameType ~ result:", result)
+
+			return result || 'unknown'
 		},
 
 		gameCreationTime() {

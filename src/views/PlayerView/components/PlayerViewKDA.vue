@@ -1,12 +1,13 @@
 <template>
-	<div class="text-base flex gap-x-1 justify-center items-center">
+	<div class="lg:text-base sm:text-sm text-xs flex gap-x-1 justify-center items-center">
+		<div class="min-[540px]:hidden">|</div>
 		<span :class="['font-bold', {
 			'!text-red-500': kdaValue <= 0.5,
 			'!text-pink-500': kdaValue > 0.5 && kdaValue <= 1.0,
 			'!text-green-500': kdaValue > 1.0 && kdaValue <= 2.0,
 			'!text-sky-500': kdaValue > 2.0 && kdaValue <= Infinity,
 		}]">{{ kdaString }}</span>
-		<span class="text-sm text-slate-500">KDA</span>
+		<span class="sm:text-sm text-xs text-slate-500">KDA</span>
 	</div>
 </template>
 
