@@ -90,7 +90,6 @@ export default {
 				1400: 'Spellbook'
 			}
 
-
 			const result = gameTypes[this.matchInfo.info.queueId]
 			console.log("🚀 ~ file: PlayerViewMatch.vue:94 ~ gameType ~ result:", result)
 

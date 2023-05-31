@@ -1,6 +1,5 @@
 <template>
-	<div class="lg:text-base sm:text-sm text-xs flex gap-x-1 justify-center items-center">
-		<div class="min-[540px]:hidden">|</div>
+	<div class="lg:text-base sm:text-sm text-xs flex gap-x-1 justify-center items-center max-[420px]:hidden">
 		<span :class="['font-bold', {
 			'!text-red-500': kdaValue <= 0.5,
 			'!text-pink-500': kdaValue > 0.5 && kdaValue <= 1.0,

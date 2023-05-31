@@ -25,7 +25,10 @@
 					}}
 				</router-link>
 
-				<div class="min-[540px]:hidden flex min-[540px]:gap-x-1 gap-x-0">
+				<div :class="['min-[540px]:hidden flex items-center min-[540px]:gap-x-1 gap-x-0', {
+							'flex-row-reverse': reverse
+						}]">
+
 					<div class="min-[540px]:hidden flex gap-x-1 lg:text-lg sm:text-base text-sm text-gray-800">
 						<div class="">{{ participant.kills }}</div>
 						<span> / </span>
@@ -33,6 +36,8 @@
 						<span> / </span>
 						<div class="">{{ participant.assists }}</div>
 					</div>
+
+					<div class="min-[540px]:hidden max-[420px]:hidden text-sm text-slate-500">|</div>
 
 					<PlayerViewKDA :kills="participant.kills" :deaths="participant.deaths" :assists="participant.assists" />
 				</div>
