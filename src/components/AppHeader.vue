@@ -10,13 +10,15 @@
 				</router-link>
 
 				<nav class="max-md:hidden flex gap-x-1">
-					<router-link class="text-lg text-slate-200 py-2 max-md:py-1 px-4 transition-all" to="/"
+					<router-link
+						class="text-lg font-medium text-slate-200 py-2 max-md:py-1 px-4 transition-all hover:text-green-300" to="/"
 						active-class="nav-active">
 						Home
 					</router-link>
 
-					<router-link class="text-lg text-slate-200 py-2 max-md:py-1 px-4 transition-all" to="/top-players"
-						active-class="nav-active">
+					<router-link
+						class="text-lg font-medium text-slate-200 py-2 max-md:py-1 px-4 transition-all hover:text-green-300"
+						to="/top-players" active-class="nav-active">
 						Top players
 					</router-link>
 				</nav>

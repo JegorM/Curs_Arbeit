@@ -75,4 +75,24 @@ function infoAbuttMatch(idMatch, platform) {
 		})
 }
 
-export { searchPlayers, searchMatches, infoAbuttMatch }
+function getTopPlayersData(serverCode) {
+	return fetch(
+		`https://${serverCode.toLowerCase()}.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=${ApiToken}`,
+		{
+			method: 'GET',
+			headers: HEADERS
+		}
+	)
+		.then(response => {
+			if (response.status === 200) {
+				return response.json()
+			}
+
+			return null
+		})
+		.catch(() => {
+			return null
+		})
+}
+
+export { searchPlayers, searchMatches, infoAbuttMatch, getTopPlayersData }
