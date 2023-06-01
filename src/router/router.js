@@ -1,15 +1,14 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-const HomeView = import(
-	/* webpackChunkName: HomeView */ '../views/HomeView.vue'
-)
-const ChampionView = import(
-	/* webpackChunkName: ChampionView */ '../views/ChampionView.vue'
-)
+const HomeView = () =>
+	import(/* webpackChunkName: "home-view" */ '../views/HomeView.vue')
+const ChampionView = () =>
+	import(/* webpackChunkName: "champion-view" */ '../views/ChampionView.vue')
 
-const PlayerView = import(
-	/* webpackChunkName: PlayerView */ '../views/PlayerView/PlayerView.vue'
-)
+const PlayerView = () =>
+	import(
+		/* webpackChunkName: "player-view" */ '../views/PlayerView/PlayerView.vue'
+	)
 
 const routes = [
 	{ path: '/', component: HomeView },
