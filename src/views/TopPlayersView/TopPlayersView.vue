@@ -105,7 +105,16 @@ export default {
 			if (this.topPlayersData[serverCode]) return
 
 			getTopPlayersData(serverCode).then(data => {
-				this.topPlayersData[serverCode] = data
+				this.topPlayersData[serverCode] = {
+					...data,
+					entries: data.entries.sort((a, b) => {
+						if (a.leaguePoints > b.leaguePoints) return -1
+
+						if (a.leaguePoints === b.leaguePoints) return 0
+
+						return 1
+					})
+				}
 			})
 		}
 	},
