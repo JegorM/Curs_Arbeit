@@ -2,8 +2,10 @@
 	<header class="bg-sky-500 shadow-lg px-6 w-full">
 		<div class="max-w-[1440px] mx-auto py-4 flex justify-between gap-x-3 md:gap-x-0">
 			<router-link class="sm:text-4xl text-3xl font-medium text-whitegroup group" to="/">
-				<span class="text-white group-hover:text-green-400 transition-all">Jungle</span>
-				<span class="text-yellow-400 group-hover:text-white transition-all">Diff</span>
+				<span class="max-sm:hidden text-white group-hover:text-green-400 transition-all">Jungle</span>
+				<span class="sm:hidden text-white group-hover:text-green-400 transition-all">Jg</span>
+				<span class="max-sm:hidden text-yellow-400 group-hover:text-white transition-all">Diff</span>
+				<span class="sm:hidden text-yellow-400 group-hover:text-white transition-all">Df</span>
 			</router-link>
 
 			<div class="inline-flex">
