@@ -1,25 +1,30 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from 'vue-router'
 
-const HomeView = import(
-  /* webpackChunkName: HomeView */ "../views/HomeView.vue"
-);
-const ChampionView = import(
-  /* webpackChunkName: ChampionView */ "../views/ChampionView.vue"
-);
+const HomeView = () =>
+	import(/* webpackChunkName: "home-view" */ '../views/HomeView.vue')
+const ChampionView = () =>
+	import(/* webpackChunkName: "champion-view" */ '../views/ChampionView.vue')
 
-const PlayerView = import(
-  /* webpackChunkName: PlayerView */ "../views/PlayerView.vue"
-);
+const PlayerView = () =>
+	import(
+		/* webpackChunkName: "player-view" */ '../views/PlayerView/PlayerView.vue'
+	)
+
+const TopPlayersView = () =>
+	import(
+		/* webpackChunkName: "player-view" */ '../views/TopPlayersView/TopPlayersView.vue'
+	)
 
 const routes = [
-  { path: "/", component: HomeView },
-  { path: "/champion/:id", component: ChampionView },
-  { path: "/player/:playerName", component: PlayerView },
-];
+	{ path: '/', component: HomeView },
+	{ path: '/champion/:id', component: ChampionView },
+	{ path: '/player/:serverCode/:playerName', component: PlayerView },
+	{ path: '/top-players', component: TopPlayersView }
+]
 
 const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
-});
+	history: createWebHashHistory(),
+	routes
+})
 
-export default router;
+export default router

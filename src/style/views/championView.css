@@ -1,31 +1,11 @@
-.containerArt {
-  padding: 20px 0;
-  background-color: #f8f8e9;
-  border: 1px solid black;
-}
-.nameChamp {
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-}
-.artChamp {
-  display: inline-flex;
-  justify-content: space-around;
-  padding-bottom: 20px;
-}
-.loreChemp {
-  width: 40%;
-  font-size: 22px;
+font {
+	@apply !text-purple-600;
 }
 
-.champImg {
-  width: 500px;
-  height: 300px;
+.text-shadow-sm {
+	text-shadow: 1px 1px 5px black;
 }
 
-.spellsChamp {
-  background-color: #dfeaee;
-  border: 2px solid rgb(18, 19, 11);
-  padding: 10px;
-  margin: 20px 10px;
+.text-shadow-md {
+	text-shadow: 1px 1px 5px black;
 }
