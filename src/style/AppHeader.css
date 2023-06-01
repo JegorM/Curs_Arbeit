@@ -1,3 +1,6 @@
+.nav-active {
+	@apply text-yellow-300;
+}
 /* .container {
 	display: flex;
 	justify-content: space-between;

@@ -10,10 +10,16 @@ const PlayerView = () =>
 		/* webpackChunkName: "player-view" */ '../views/PlayerView/PlayerView.vue'
 	)
 
+const TopPlayersView = () =>
+	import(
+		/* webpackChunkName: "player-view" */ '../views/TopPlayersView/TopPlayersView.vue'
+	)
+
 const routes = [
 	{ path: '/', component: HomeView },
 	{ path: '/champion/:id', component: ChampionView },
-	{ path: '/player/:serverCode/:playerName', component: PlayerView }
+	{ path: '/player/:serverCode/:playerName', component: PlayerView },
+	{ path: '/top-players', component: TopPlayersView }
 ]
 
 const router = createRouter({
