@@ -57,8 +57,6 @@ import {
 import PlayerViewHead from './components/PlayerViewHead.vue'
 import PlayerViewMathes from './components/PlayerViewMathes.vue'
 
-import matchesInfo from './matchesInfo.json'
-
 export default {
 	components: { PlayerViewHead, PlayerViewMathes },
 	data() {
@@ -104,20 +102,11 @@ export default {
 				.then(async (matchesIds) => {
 					this.playerMathesId = matchesIds
 
-					const items = await Promise.all(matchesIds.slice(0, 3).map(async (element) => {
+					const items = await Promise.all(matchesIds.slice(0, 7).map(async (element) => {
 						return await infoAbuttMatch(element, this.serverCode)
 					}))
 
 					this.matchesInfo = items
-					// console.log(items)
-
-					// matchesIds.slice(0, 3).forEach(element => {
-					// 	console.log("🚀 ~ file: PlayerView.vue:112 ~ matchesIds.slice ~ element:", element)
-					// 	infoAbuttMatch(element, this.serverCode).then(data => {
-					// 		console.log("🚀 ~ file: PlayerView.vue:114 ~ infoAbuttMatch ~ data:", data)
-					// 		this.matchesInfo.push(data)
-					// 	})
-					// })
 				})
 		}
 	}
